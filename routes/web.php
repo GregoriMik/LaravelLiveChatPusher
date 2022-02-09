@@ -18,3 +18,12 @@ use Illuminate\Http\Response;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::post('/send-message', function(Request $request){
+    event(
+        new Message(
+            $request->input('username'),
+            $request->input('message')
+        )
+    );
+});
