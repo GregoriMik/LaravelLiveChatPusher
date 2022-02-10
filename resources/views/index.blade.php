@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <title>Laravel Chat</title>
   </head>
   <body>
@@ -16,11 +16,11 @@
             <h1>Porozmawiaj</h1>
             <input type="text" name="username" placeholder="Nazwa Użytkownika"/>
         </header>
-        <div id="message"></div>
+        <div id="messages"></div>
 
         <form id="message_form">
             <input type="text" name="message" id="message_input" placeholder="Napisz wiadomość">
-            <button type="submit" id="message_send">Wyślij wiadomość</button>
+            <button type="submit" id="message_send">Napisz wiadomość</button>
         </form>
     </div>
 
