@@ -14,7 +14,7 @@
     <div class="app">
         <header>
             <h1>Porozmawiaj</h1>
-            <input type="text" name="username" placeholder="Nazwa Użytkownika"/>
+            <input type="text" name="username" id="username"placeholder="Nazwa Użytkownika"/>
         </header>
         <div id="messages"></div>
 

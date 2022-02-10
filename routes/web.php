@@ -26,4 +26,5 @@ Route::post('/send-message', function(Request $request){
             $request->input('message')
         )
     );
+    return ["success"=>true];
 });
